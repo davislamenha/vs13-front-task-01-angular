@@ -1,0 +1,44 @@
+h2 {
+  font-size: 3rem;
+  padding: 4rem 0;
+}
+
+.characters-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  padding-bottom: 4rem;
+
+  .card {
+    background-color: #222;
+    color: #fff;
+    border-radius: 8px;
+    padding: 12px;
+
+    img {
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .tags-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding-bottom: 12px;
+
+      .tag {
+        padding: 4px 12px;
+        border-radius: 4px;
+        color: #222;
+        background-color: #68cce6;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+    }
+  }
+}

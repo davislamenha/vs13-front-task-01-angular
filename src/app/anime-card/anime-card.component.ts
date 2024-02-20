@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { DemonSlayer } from '../../types/interfaces';
+import { DemonSlayer } from '../types/interfaces';
 
 @Component({
   selector: 'app-anime-card',
