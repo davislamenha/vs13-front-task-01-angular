@@ -1,0 +1,15 @@
+section {
+  padding-block: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.animes-container {
+  padding-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-content: center;
+  gap: 40px;
+}
