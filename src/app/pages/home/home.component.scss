@@ -1,0 +1,32 @@
+.img-bg {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.overlay {
+  border-radius: 40px;
+  background: rgba($color: #000000, $alpha: 0.75);
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  color: #fff;
+  margin-top: 2rem;
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,86 @@
+h2 {
+  font-size: 3rem;
+  margin-block: 4rem 2rem;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+
+  button {
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    background-color: #222;
+    color: #fff;
+    padding: 8px 32px;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.3s all;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    @media (max-width: 767px) {
+      padding: 8px 24px;
+      font-size: 1rem;
+    }
+  }
+}
+
+.table-container {
+  max-width: 100%;
+  overflow-x: auto;
+  margin-bottom: 4rem;
+}
+
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  th,
+  td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #222;
+  }
+
+  th {
+    background-color: #222;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+
+  td {
+    font-size: 1.25rem;
+  }
+
+  tr:hover {
+    background-color: #68cce6;
+  }
+
+  @media (max-width: 768px) {
+    th,
+    td {
+      padding: 10px;
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    th,
+    td {
+      padding: 8px;
+      font-size: 0.75rem;
+    }
+  }
+}

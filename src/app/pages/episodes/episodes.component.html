@@ -1,0 +1,27 @@
+<h2>Episodios</h2>
+
+<div class="pagination-container">
+  <button *ngIf="data.info.prev" (click)="handleChangePage(this.data.info.prev)">Anterior</button>
+  <span *ngIf="!data.info.prev"></span>
+  <button *ngIf="data.info.next" (click)="handleChangePage(this.data.info.next)">Próxima</button>
+  <span *ngIf="!data.info.next"></span>
+</div>
+
+<div class="table-container">
+  <table class="responsive-table">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Data de Lançamento</th>
+        <th>Episódio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let episode of episodes">
+        <td>{{ episode.name }}</td>
+        <td>{{ episode.air_date }}</td>
+        <td>{{ episode.episode }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

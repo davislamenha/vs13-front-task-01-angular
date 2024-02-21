@@ -1,0 +1,40 @@
+h2 {
+  font-size: 3rem;
+  padding: 4rem 0;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+
+  button {
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    background-color: #222;
+    color: #fff;
+    padding: 8px 32px;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.3s all;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    @media (max-width: 767px) {
+      padding: 8px 24px;
+      font-size: 1rem;
+    }
+  }
+}
+
+.characters-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 40px;
+  padding-bottom: 4rem;
+}

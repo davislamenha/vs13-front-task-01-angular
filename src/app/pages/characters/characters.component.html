@@ -1,0 +1,15 @@
+<h2>Personagens</h2>
+
+<div class="pagination-container">
+  <button *ngIf="data.info.prev" (click)="handleChangePage(this.data.info.prev)">Anterior</button>
+  <span *ngIf="!data.info.prev"></span>
+  <button *ngIf="data.info.next" (click)="handleChangePage(this.data.info.next)">Próxima</button>
+  <span *ngIf="!data.info.next"></span>
+</div>
+
+
+<ul class="characters-container">
+  <li *ngFor="let character of characters">
+    <app-character-card [character]="character"></app-character-card>
+  </li>
+</ul>

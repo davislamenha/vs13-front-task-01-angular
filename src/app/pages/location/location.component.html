@@ -1,0 +1,10 @@
+<h2>Locais</h2>
+
+<div class="location-container">
+  <app-location-selector (locationId)="handleLocation($event)"></app-location-selector>
+  <div class="location">
+    <h3>{{location.name}}</h3>
+    <p>{{location.dimension}}</p>
+    <p>{{location.type}}</p>
+  </div>
+</div>

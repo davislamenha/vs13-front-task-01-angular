@@ -1,0 +1,56 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #222;
+  color: #fff;
+  border-radius: 8px;
+  padding: 12px;
+
+  img {
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .tags-container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-bottom: 12px;
+    min-height: 72px;
+
+    .tag {
+      padding: 4px 12px;
+      border-radius: 4px;
+      color: #222;
+      background-color: #68cce6;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+  }
+
+  button {
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    background-color: #68cce6;
+    color: #222;
+    padding: 8px;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 100%;
+    transition: 0.3s all;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

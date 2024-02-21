@@ -1,0 +1,14 @@
+<div class="card">
+  <img [src]="character.image" alt="{{character.name}}">
+  <div class="card-header">
+    <h3>{{character.name}}</h3>
+  </div>
+  <div class="card-body">
+    <div class="tags-container">
+      <span class="tag">{{character.gender}}</span>
+      <span class="tag">{{character.species}}</span>
+      <span class="tag">{{character.status}}</span>
+    </div>
+    <button routerLink="{{character.id}}">Detalhes</button>
+  </div>
+</div>

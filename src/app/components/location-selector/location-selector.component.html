@@ -1,0 +1,4 @@
+<select (change)="sendLocation($event)">
+  <option value="">Selecione um Local</option>
+  <option *ngFor="let location of locations" value="{{location.id}}">{{location.name}}</option>
+</select>
