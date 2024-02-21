@@ -38,6 +38,14 @@ Desenvolver uma aplicação SSR utilizando o Angular.
 - [x] Rota tres - simplificada usando textos e imagens (livre);
 - [x] _Deploy_ no _Vercel_
 
+#### Atualização para task 02
+
+- [x] Home: tela inicial conforme o modelo;
+- [x] Usar Fluxo de dados de pai para filho e filho para pai;
+- [x] Colocar no contexto do assunto escolhido;
+- [x] Colocar a home como tela inicial;
+- [x] 5 rotas;
+
 ---
 
 ## 3. Metodologia
